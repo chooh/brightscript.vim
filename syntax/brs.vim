@@ -87,7 +87,7 @@ syn match  brsFloat		"[-+]\=\<\.\d\+\([eE][\-+]\=\d\+\)\="
 
 " String and Character contstants
 syn region  brsString		start=+"+  end=+"\|$+
-syn region  brsComment		start="\(^\|\s\)REM\s*" end="$" contains=brsTodo
+syn region  brsComment		start="\(^\|\s\)REM \s*" end="$" contains=brsTodo
 syn region  brsComment		start="\(^\|\s\)\'"   end="$" contains=brsTodo
 syn match   brsLineNumber	"^\d\+\(\s\|$\)"
 syn match   brsTypeSpecifier  "[a-zA-Z0-9][\$%&!#]"ms=s+1
